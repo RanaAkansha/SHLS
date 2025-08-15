@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SHLS Daily Activity Review" />
+    <meta name="keywords" content="SHLS, daily review, activities, health" />
+    <meta name="author" content="Akansha Rana" />
+    <title>SHLS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-100 to-green-100 text-gray-800"
+  >
+    <h1 class="text-4xl sm:text-5xl font-bold text-blue-800 mb-6">
+      Welcome to SHLS
+    </h1>
+
+    <form
+      action="main.html"
+      method="get"
+      class="w-full max-w-xs sm:max-w-md mx-auto p-6 border-2 border-gray-300 rounded-lg shadow-md bg-white"
+    >
+      <div class="mb-4 relative">
+        <label for="name" class="block text-sm font-medium mb-1">Name:</label>
+        <div class="flex items-center">
+          <svg
+            class="absolute w-5 h-5 text-gray-400 ml-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+            />
+          </svg>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+            required
+            class="w-full pl-10 p-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
+            autocomplete="name"
+          />
+        </div>
+      </div>
+
+      <div class="mb-4 relative">
+        <label for="email" class="block text-sm font-medium mb-1">Email:</label>
+        <div class="flex items-center">
+          <svg
+            class="absolute w-5 h-5 text-gray-400 ml-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+            />
+          </svg>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+            class="w-full pl-10 p-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
+            autocomplete="email"
+          />
+        </div>
+      </div>
+
+      <div class="mb-4 relative">
+        <label for="hostel" class="block text-sm font-medium mb-1"
+          >Hostel:</label
+        >
+        <div class="flex items-center">
+          <svg
+            class="absolute w-5 h-5 text-gray-400 ml-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a2 2 0 012-2h2a2 2 0 012 2v5m-4 0h4"
+            />
+          </svg>
+          <select
+            name="hostel"
+            id="hostel"
+            class="w-full pl-10 p-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
+            required
+          >
+            <option value="hostel1">Sanghmitra Hostel</option>
+            <option value="hostel2">Nivedita Hostel</option>
+            <option value="hostel3">Arvind Hostel</option>
+            <option value="hostel4">Panini Hostel</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mb-4 relative">
+        <label for="block" class="block text-sm font-medium mb-1">Block:</label>
+        <div class="flex items-center">
+          <svg
+            class="absolute w-5 h-5 text-gray-400 ml-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+            />
+          </svg>
+          <select
+            name="block"
+            id="block"
+            class="w-full pl-10 p-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
+            required
+          >
+            <option value="block1">A</option>
+            <option value="block2">B</option>
+            <option value="block3">C</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mb-4 relative">
+        <label for="floor" class="block text-sm font-medium mb-1">Floor:</label>
+        <div class="flex items-center">
+          <svg
+            class="absolute w-5 h-5 text-gray-400 ml-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+            />
+          </svg>
+          <select
+            name="floor"
+            id="floor"
+            class="w-full pl-10 p-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
+            required
+          >
+            <option value="floor1">Ground Floor</option>
+            <option value="floor2">First Floor</option>
+            <option value="floor3">Second Floor</option>
+            <option value="floor4">Third Floor</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mb-4 relative">
+        <label for="room" class="block text-sm font-medium mb-1"
+          >Dormitory:</label
+        >
+        <div class="flex items-center">
+          <svg
+            class="absolute w-5 h-5 text-gray-400 ml-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+            />
+          </svg>
+          <input
+            type="text"
+            id="room"
+            placeholder="Enter dormitory number"
+            required
+            class="w-full pl-10 p-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
+          />
+        </div>
+      </div>
+
+      <div class="mb-4 flex items-center">
+        <input
+          type="checkbox"
+          id="agree"
+          class="mr-2 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+        />
+        <label for="agree" class="text-sm font-medium">Remember Me</label>
+      </div>
+
+      <button
+        type="submit"
+        class="w-full p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center"
+      >
+        <svg
+          class="w-5 h-5 mr-2"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+        Proceed
+      </button>
+    </form>
+  </body>
+</html>
